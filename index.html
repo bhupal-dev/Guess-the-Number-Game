@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple JavaScript number guessing game with attempt tracking and high score persistence.">
+  <title>Guess the Number | Bhupal Singh Bhandari</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-card">
+    <p class="eyebrow">JAVASCRIPT PROJECT</p>
+    <h1>Guess the Number</h1>
+    <p class="subtitle">Guess the secret number between 1 and 10.</p>
+    <div class="score">Best attempts: <strong id="highScore">—</strong></div>
+    <label for="guessInput">Your guess</label>
+    <div class="controls">
+      <input id="guessInput" type="number" min="1" max="10" inputmode="numeric" placeholder="1–10">
+      <button id="guessBtn">Guess</button>
+    </div>
+    <p id="message" class="message" role="status" aria-live="polite">Make your first guess.</p>
+    <button id="playAgainBtn" class="secondary" hidden>Play again</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
